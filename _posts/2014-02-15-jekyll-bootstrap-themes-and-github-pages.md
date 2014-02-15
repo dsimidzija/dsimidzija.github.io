@@ -10,7 +10,10 @@ tags: [jekyll, jekyll-bootstrap, github, github-pages, fix]
 After setting up jekyll-bootstrap and playing with it for a while, I decided to
 try and set up a custom theme by following the [official instructions][jb-theming].
 Several themes are conveniently available at [themes.jekyllbootstrap.com][jb-themes],
-including the theme you're looking at right now. 
+including the theme you're looking at right now. But did it work out of the box? No.
+Of course not.
+
+<a name="excerpt-continue"></a>
 
 After running `rake theme:install git="https://github.com/dhulihan/hooligan.git"`
 and switching to the newly installed theme, I tried to push to GitHub. Unfortunately,
