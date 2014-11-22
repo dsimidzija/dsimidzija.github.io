@@ -12,7 +12,7 @@ Did you ever need a simple way to create an [atomic][atomicity] action in your a
 
 # Background
 
-For some context, here is how I came up with this code. I was working on a hardware simulator application, where each application plugin was a simulator for a specific peace of hardware. The plugins are of course completely isolated from each other, each one loaded and configured dynamically during the runtime, through XML files.
+For some context, here is how I came up with this code. I was working on a hardware simulator application, where each application plugin was a simulator for a specific piece of hardware. The plugins are of course completely isolated from each other, each one loaded and configured dynamically during the runtime, through XML files.
 
 A typical run would go through several stages, from loading a project to starting the simulation and running one or more test scripts, written in IronPython. These scripts are used by validation engineers to test the system quickly using our virtual hardware, instead of painstaking manual testing with real hardware (although this has to be done as well from time to time).
 
