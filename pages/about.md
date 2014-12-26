@@ -5,7 +5,7 @@ description: ""
 ---
 {% include JB/setup %}
 
-My name is Du&scaron;ko Simid&zcaron;ija and I am a software engineer from [Croatia][hr].
+My name is Dusko Simidzija and I am a software engineer from [Croatia][hr].
 
 My passion is writing simple and functional applications, with readable and maintainable code.
 
