@@ -5,7 +5,6 @@ description: ""
 category: Reviews
 tags: [books, reviews]
 ---
-{% include JB/setup %}
 
 Book: The Complete Maus<br />
 Author: Art Spiegelman<br />

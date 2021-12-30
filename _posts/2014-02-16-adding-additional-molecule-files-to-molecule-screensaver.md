@@ -5,7 +5,6 @@ description: ""
 category: Linux
 tags: [linux, ubuntu, gnome, howto]
 ---
-{% include JB/setup %}
 
 I wanted to add additional molecule definitions to the excellent
 [molecule screensaver][molecule]. But in the infinite wisdom of Gnome developers,
@@ -34,7 +33,7 @@ In any case, copy the existing molecule file and open the copy in
 ```bash
 $ cd /usr/share/applications/screensavers
 $ sudo cp molecule.desktop molecule2.desktop
-$ sudo vi molecule2.desktop
+$ sudo vim molecule2.desktop
 ```
 
 Change the `Name` and `Exec` line and give molecule the path to your PDB files:

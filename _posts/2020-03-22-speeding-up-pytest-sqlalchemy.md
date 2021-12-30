@@ -5,7 +5,6 @@ description: ""
 category: Programming
 tags: [programming, python, unit-tests, sqlalchemy]
 ---
-{% include JB/setup %}
 
 A large chunk of python projects use SQLAlchemy as ORM, and in doing so may
 actually be doubling their test runs.

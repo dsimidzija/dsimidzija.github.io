@@ -5,7 +5,8 @@ description: ""
 category: Programming
 tags: [jekyll, jekyll-bootstrap, github, github-pages, fix]
 ---
-{% include JB/setup %}
+**UPDATE:** This site has since been switched to the elegant theme by the name
+of [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy).
 
 After setting up jekyll-bootstrap and playing with it for a while, I decided to
 try and set up a custom theme by following the [official instructions][jb-theming].
@@ -46,8 +47,8 @@ Then simply edit your `.gitignore` and add the `_theme_packages` folder:
 *.swp
 _site
 _theme_packages
- 
 ```
+{: file=".gitignore" }
 
 Finally, commit and push to GitHub and you should be done. I'm not sure whether
 this is the correct way to resolve the issue, it looks like this may be a bug
@@ -55,4 +56,3 @@ in jekyll-bootstrap.
 
 [jb-theming]: http://jekyllbootstrap.com/usage/jekyll-theming.html
 [jb-themes]: http://themes.jekyllbootstrap.com/
-

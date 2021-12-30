@@ -5,7 +5,6 @@ description: ""
 category: Linux
 tags: [linux, fix, ext4, mint, ubuntu]
 ---
-{% include JB/setup %}
 
 After four years of using Ubuntu 10.10 (Maverick), I've finally decided to bite the bullet and upgrade. But then I've noticed that the system is reporting 77GB of "Free space" and only 9GB of "Available space". Turns out I had more _free space_ than I thought...
 

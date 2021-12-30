@@ -5,7 +5,6 @@ description: ""
 category: Programming
 tags: [programming, howto, tricks, c#, .net]
 ---
-{% include JB/setup %}
 
 Did you ever need a simple way to create an [atomic][atomicity] action in your application? Thanks to closures, this has now become trivially easy to accomplish.
 <a name="excerpt-continue"></a>
@@ -37,38 +36,38 @@ using System.Text;
 
 namespace Redacted.Utility
 {
-	public class Execute
-	{
-		/// <summary>
-		/// Execute an action atomically, if an exception occurs,
-		/// revert the action by executing actions loaded in the undo stack.
-		/// </summary>
-		/// <param name="action">Action to be executed.</param>
-		/// <returns>Exception if it occurred, null if execution was successful.</returns>
-		public static Exception ReversibleAction(Action<Stack<Action>> action)
-		{
-			Stack<Action> undo_stack = new Stack<Action>();
+    public class Execute
+    {
+        /// <summary>
+        /// Execute an action atomically, if an exception occurs,
+        /// revert the action by executing actions loaded in the undo stack.
+        /// </summary>
+        /// <param name="action">Action to be executed.</param>
+        /// <returns>Exception if it occurred, null if execution was successful.</returns>
+        public static Exception ReversibleAction(Action<Stack<Action>> action)
+        {
+            Stack<Action> undo_stack = new Stack<Action>();
 
-			try
-			{
-				action.Invoke(undo_stack);
-			}
-			catch (Exception e)
-			{
-				while (undo_stack.Count > 0)
-				{
-					Action undo_action = undo_stack.Pop();
+            try
+            {
+                action.Invoke(undo_stack);
+            }
+            catch (Exception e)
+            {
+                while (undo_stack.Count > 0)
+                {
+                    Action undo_action = undo_stack.Pop();
 
-					try { undo_action.Invoke(); }
-					catch { }
-				}
+                    try { undo_action.Invoke(); }
+                    catch { }
+                }
 
-				return e;
-			}
+                return e;
+            }
 
-			return null;
-		}
-	}
+            return null;
+        }
+    }
 }
 ```
 
@@ -85,29 +84,29 @@ Luckily, the usage is also very simple, and here is the example straight from th
 /// <param name="project">Loaded project.</param>
 public static void BeginRuntime(Project project)
 {
-	Exception error = Execute.ReversibleAction(
-		(Stack<Action> undo) =>
-		{
-			foreach (Plugin plugin in project.PluginManager)
-			{
-				plugin.BeginRuntime();
-				undo.Push(() => plugin.EndRuntime());
-			}
+    Exception error = Execute.ReversibleAction(
+        (Stack<Action> undo) =>
+        {
+            foreach (Plugin plugin in project.PluginManager)
+            {
+                plugin.BeginRuntime();
+                undo.Push(() => plugin.EndRuntime());
+            }
 
-			foreach (Device device in project.DeviceManager)
-			{
-				device.BeginRuntime();
-				undo.Push(() => device.EndRuntime());
+            foreach (Device device in project.DeviceManager)
+            {
+                device.BeginRuntime();
+                undo.Push(() => device.EndRuntime());
 
-				device.Connect();
-				undo.Push(() => device.Disconnect());
-			}
-		});
+                device.Connect();
+                undo.Push(() => device.Disconnect());
+            }
+        });
 
-	if (error != null)
-	{
-		throw error;
-	}
+    if (error != null)
+    {
+        throw error;
+    }
 }
 ```
 

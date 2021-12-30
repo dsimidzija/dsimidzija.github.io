@@ -5,7 +5,6 @@ description: ""
 category: Programming
 tags: [android, sms, sqlite, howto]
 ---
-{% include JB/setup %}
 
 This is a short story of how I lost all my SMS messages on my Android phone,
 then got (most of) them back, and in the process learned how horrible
@@ -33,7 +32,7 @@ some data (~300 messages in my case), but it's still a better deal than
 losing everything. I restored as much as possible by running this:
 
 ```bash
-  $ echo '.dump' | sqlite3 mmssms.db | sqlite3 mmssms-repaired.db
+$ echo '.dump' | sqlite3 mmssms.db | sqlite3 mmssms-repaired.db
 ```
 
 Unfortunately that version of the database didn't work either, the app still
@@ -69,10 +68,10 @@ I found the necessary information by looking through MmsSmsDatabaseHelper.java,
 
 Check this out:
 
-```
+```wrap
 E/MmsSmsDatabaseHelper( 2414): android.database.sqlite.SQLiteException: table cmas already exists (code 1): , while compiling: CREATE TABLE cmas (_id INTEGER PRIMARY KEY AUTOINCREMENT,sms_id INTEGER,thread_id INTEGER,service_category INTEGER,category INTEGER,response_type INTEGER,severity INTEGER,urgency INTEGER,certainty INTEGER,identifier INTEGER,alert_handling INTEGER,expires INTEGER,language INTEGER,expired INTEGER DEFAULT 1);
 (...snip...)
-E/MmsSmsDatabaseHelper( 2414): 	at com.android.providers.telephony.MmsSmsDatabaseHelper.upgradeDatabaseToVersion57(MmsSmsDatabaseHelper.java:2468)
+E/MmsSmsDatabaseHelper( 2414): at com.android.providers.telephony.MmsSmsDatabaseHelper.upgradeDatabaseToVersion57(MmsSmsDatabaseHelper.java:2468)
 ```
 
 Looks like a normal error message?

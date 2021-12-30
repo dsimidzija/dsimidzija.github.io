@@ -5,7 +5,6 @@ description: ""
 category: Programming
 tags: [programming, psychology]
 ---
-{% include JB/setup %}
 
 I recently received a link to a job ad from a coworker, published on a major Croatian job market website. It was so stupid I wrote this.
 

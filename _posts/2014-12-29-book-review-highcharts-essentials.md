@@ -5,7 +5,6 @@ description: ""
 category: Reviews
 tags: [books, reviews]
 ---
-{% include JB/setup %}
 
 Book: Highcharts Essentials<br />
 Author: Bilal Shahid<br />

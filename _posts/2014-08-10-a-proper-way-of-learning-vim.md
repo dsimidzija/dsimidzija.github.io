@@ -5,7 +5,6 @@ description: ""
 category: Programming
 tags: [vim, tricks, productivity, beginner]
 ---
-{% include JB/setup %}
 
 When I started learning [The Editor][vimorg] years ago, I tried out different things to see what is the best way of doing it. Here are some tips which may helpful to you if you're struggling.
 <a name="excerpt-continue"></a>
@@ -33,4 +32,4 @@ Just don't rush it!:wq
 [3]: http://stackoverflow.com/questions/597077/is-learning-vim-worth-the-effort
 [vimorg]: http://www.vim.org/
 [learning curve]: http://blog.lookthink.com/wp-content/uploads/2014/01/text_editors.jpg
-[sheet]: http://zombiebrainzjuice.fr/wp-content/uploads/2013/08/An-extended-and-graphical-VIM-cheat-sheet.png
+[sheet]: https://vim.rtorr.com/

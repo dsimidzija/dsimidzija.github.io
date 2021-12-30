@@ -1,15 +1,21 @@
 # What
 
-This is the source of my homepage <https://dsimidzija.github.io/>,
-created using the (now obsolete) <http://jekyllbootstrap.com>.
-
-Yes, I should switch to something better and maintained.
+This is the source of my homepage <https://dsimidzija.github.io/>.
 
 ## Using
+
+* [Jekyll][]
+* [Chirpy][]
 
 `rvm` / `bundler` / `rake`
 
 At the time of writing, running with `ruby-2.5.1`.
+
+### Running locally
+
+```bash
+$ jekyll serve --incremental --livereload
+```
 
 ## Misc troubleshooting
 
@@ -26,3 +32,6 @@ Do this:
        2.1.4
 
     $ gem install bundler -v '2.1.4'
+
+[Jekyll]: https://jekyllrb.com/
+[Chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy
