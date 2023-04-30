@@ -168,6 +168,20 @@ actual values!
 * If you have noticed an error in this guide, or have a way of improving/simplifying it, please let me know via a
   github issue on [this page repo](https://github.com/dsimidzija/dsimidzija.github.io).
 
+## Links
+
+Some useful and semi-useful links I ran into while researching how to do this:
+
+* <https://wiki.archlinux.org/title/Logitech_Racing_Wheel>
+* <https://github.com/AIRLegend/aitrack/wiki/User-guide>
+* <https://steamcommunity.com/app/227300/discussions/0/648816742950435869/>
+* <http://www.trainsimdev.com/forum/viewtopic.php?f=38&t=227&start=20>
+* <https://www.reddit.com/r/linux_gaming/comments/yx3mfz/head_tracking_on_linux/>
+* <https://github.com/berarma/new-lg4ff/issues/38>
+* <https://github.com/RenCloud/scs-sdk-plugin>
+* <https://modding.scssoft.com/wiki/Documentation/Engine/SDK/Telemetry>
+* <https://forum.scssoft.com/viewtopic.php?t=24924>
+* <https://roextended.ro/forum/viewtopic.php?t=1776>
 
 *[ETS2]: Euro Truck Simulator 2
 [aitrack-pkgbuild-repo]: https://github.com/mdk97/aitrack-linux-pkgbuild
