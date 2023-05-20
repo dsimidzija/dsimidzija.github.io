@@ -2,27 +2,15 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title
 
-exclude:
-  - .rvmrc
-  - .rbenv-version
-  - README.md
-  - Rakefile
-markdown: kramdown
-highlighter: rouge
 
-theme: jekyll-theme-chirpy
-theme_mode: dark
-avatar: images/avatar-v1.png
+lang: en
+timezone: Europe/Zagreb
 
-excerpt_separator: <a name="excerpt-continue"></a>
-
-# Themes are encouraged to use these universal variables
-# so be sure to set them if your theme uses them.
-#
 title: Duško Simidžija
 tagline: Self Rubber Ducking
 github:
   username: dsimidzija
+
 social:
   name: Dusko Simidzija
   email: dusko.simidzija@gmail.com
@@ -31,14 +19,26 @@ social:
     - https://github.com/dsimidzija
     - https://www.linkedin.com/in/duskosimidzija
 
+theme: jekyll-theme-chirpy
+theme_mode: dark
+avatar: images/avatar-v1.png
+markdown: kramdown
+highlighter: rouge
+
+excerpt_separator: <a name="excerpt-continue"></a>
+
 google_analytics:
-  id: 'UA-53678026-1'
+  id: "G-B0MLF9E0DR"
 
 toc: true
 
+assets:
+  self_host:
+    enabled: true
+
 kramdown:
   syntax_highlighter: rouge
-  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
     css_class: highlight
     # default_lang: console
     span:
@@ -54,7 +54,7 @@ collections:
 
 defaults:
   - scope:
-      path: ''          # An empty string here means all files in the project
+      path: "" # An empty string here means all files in the project
       type: posts
     values:
       layout: post
@@ -68,12 +68,41 @@ defaults:
     values:
       comments: false
   - scope:
-      path: ''
-      type: tabs             # see `site.collections`
+      path: ""
+      type: tabs # see `site.collections`
     values:
       layout: page
       permalink: /:title/
-      dynamic_title: true    # Hide title in mobile screens.
+  - scope:
+      path: assets/img/favicons
+    values:
+      swcache: true
+  - scope:
+      path: assets/js/dist
+    values:
+      swcache: true
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - .rbenv-version
+  - .rvmrc
+  - README.md
+  - Rakefile
+  - node_modules
+  - tools
 
 jekyll-archives:
   enabled: [categories, tags]
@@ -92,4 +121,4 @@ jekyll-archives:
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url: http://dsimidzija.github.io
+production_url: https://dsimidzija.github.io

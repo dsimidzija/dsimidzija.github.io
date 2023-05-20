@@ -1,5 +1,22 @@
-*.sw[po]
-_site/
-.sass-cache/
+# Bundler cache
+.bundle
+vendor
+
+# Jekyll cache
 .jekyll-cache/
 .jekyll-metadata
+_site/
+
+# RubyGems
+*.gem
+
+# NPM dependencies
+node_modules
+package-lock.json
+
+# misc
+.sass-cache/
+.assets/js/dist
+
+# Vim
+*.sw[po]
