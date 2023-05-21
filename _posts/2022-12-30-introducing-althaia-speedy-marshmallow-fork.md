@@ -158,7 +158,7 @@ few gotchas worth noting:
   setup.py, setup.cfg, distutils, setuptools, cython, cffi, PyPA build, ...
 
   [![relevant xkcd](https://imgs.xkcd.com/comics/python_environment.png)](https://xkcd.com/1987/)
-  _Relevant xkcd_
+  <br />_Relevant xkcd_
   {: style="text-align: center" }
 
   Luckily, things are greatly simplified by using `pyproject.toml`, [PEP 517][pep-517], and

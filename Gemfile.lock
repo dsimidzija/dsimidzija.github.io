@@ -52,7 +52,7 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-theme-chirpy (5.5.2)
+    jekyll-theme-chirpy (6.0.1)
       jekyll (~> 4.3)
       jekyll-archives (~> 2.2)
       jekyll-paginate (~> 1.1)
@@ -104,7 +104,7 @@ PLATFORMS
 DEPENDENCIES
   html-proofer (~> 3.18)
   jekyll-sitemap
-  jekyll-theme-chirpy (~> 5.5.2)
+  jekyll-theme-chirpy (~> 6.0, >= 6.0.1)
   kramdown
   kramdown-parser-gfm
   rouge
