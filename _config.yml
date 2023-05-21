@@ -36,6 +36,10 @@ assets:
   self_host:
     enabled: true
 
+# note to future self: if this setting is ommitted, chirpy breaks completely
+# and doesn't show anything on the homepage, except pinned posts
+paginate: 5
+
 kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
