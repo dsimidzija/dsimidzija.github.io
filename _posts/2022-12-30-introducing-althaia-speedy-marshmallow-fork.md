@@ -4,7 +4,6 @@ title: "Introducing Althaia: a speedy Marshmallow fork"
 description: "Althaia is a drop-in replacement for the #1 Python serialization library - marshmallow"
 category: Programming
 tags: [programming, python, marshmallow, serialization, marshalling, althaia]
-pin: true
 ---
 _Althaia_ is a drop-in replacement for the #1 Python serialization library -
 [marshmallow][]. It is also a shallow fork of marshmallow, basically using
