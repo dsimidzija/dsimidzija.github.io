@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll-sitemap"
-gem "jekyll-theme-chirpy", "~> 6.0", ">= 6.0.1"
+gem "jekyll-theme-chirpy"
 gem "rouge"
 gem "kramdown"
 gem "kramdown-parser-gfm"
