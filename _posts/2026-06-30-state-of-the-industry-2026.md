@@ -255,7 +255,7 @@ It is tricky to handle, because it is Good Enough&trade;. It often even works. D
 some fairly shitty code, but one thing I hadn't seen until last year was shitty code _that's really **really** good at
 masquerading as good code_. At least, not on this level.
 
-![](/assets/img/2026-state-of-the-industry/uncanny-valley.png)
+![Uncanny valley graph](/assets/img/2026-state-of-the-industry/uncanny-valley.png)
 _Source: [Wikipedia](https://en.wikipedia.org/wiki/Uncanny_valley "Wikipedia: Uncanny valley")_
 {: style="max-width: 50%; text-align: center; margin: auto; padding-bottom: 1em; font-size: 0.9em;" }
 
