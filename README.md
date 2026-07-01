@@ -64,10 +64,17 @@ Solution:
 ```bash
 gem uninstall PACKAGE_NAME
 gem install --platform ruby PACKAGE_NAME
+
 ```
 
 If `gem uninstall PACKAGE_NAME` is returning multiple versions of the same package, and one of them ends with
 `-x86_64-linux`, it should be enough to just remove that.
+
+```bash
+gem uninstall google-protobuf && gem install --platform ruby google-protobuf
+gem uninstall ffi && gem install --platform ruby ffi
+gem uninstall nokogiri && gem install --platform ruby nokogiri
+```
 
 [Jekyll]: https://jekyllrb.com/
 [Chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy
