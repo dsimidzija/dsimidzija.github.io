@@ -64,7 +64,7 @@ When blockchain was trending, we went through three distinct stages of developme
    This meant that laypeople pretty much stopped caring about it, and engineers started using it only where it made
    sense.
 
-We are now obviously at the second stage of AI hype, and we're waiting for the bubble to burst. When will this happen is
+We are now obviously at the second stage of AI hype, and we're waiting for the bubble to burst. When this will happen is
 anyone's guess. But in the meantime, keep in mind that "AI" in this text should always have quotation marks around it,
 because there is no thinking happening when AI is "thinking". We are, ultimately, still talking about [stochastic
 parrots][stochastic-parrot].
