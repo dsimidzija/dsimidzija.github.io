@@ -403,6 +403,7 @@ Here are some more interesting links dealing with a lot of the topics mentioned 
   <br />(the video isn't that interesting, but the comments are entertaining)
 * [‘I wish I could push ChatGPT off a cliff’: professors scramble to save critical thinking in an age of AI](https://www.theguardian.com/technology/ng-interactive/2026/mar/10/ai-impact-professors-students-learning)
 * [Bosses Are Becoming Obsessed With AI, Using It to Make Every Decision, ...](https://futurism.com/artificial-intelligence/bosses-obsessed-with-ai "Bosses Are Becoming Obsessed With AI, Using It to Make Every Decision, Barraging Their Employees With Nonsensical ChatGPT Directives, and Even Asking It Who to Fire")
+* [The Infographics Show: AI Replacing Developers Has Officially Failed](https://www.youtube.com/watch?v=F91uY7QiZUs)
 * [AI Incident Database](https://incidentdatabase.ai/)
 
 
