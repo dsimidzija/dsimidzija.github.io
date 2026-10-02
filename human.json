@@ -1,0 +1,16 @@
+---
+layout: none
+permalink: /human.json
+---
+{
+    "version": "0.1.1",
+    "url": "{{ site.production_url }}",
+    "vouches": [
+        {% for human in site.data.humans %}
+        {
+            "url": "{{ human.url }}",
+            "vouched_at": "{{ human.vouched_at }}"
+        }{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+    ]
+}
